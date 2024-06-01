@@ -9,6 +9,10 @@ public class DiceController : MonoBehaviour
     private float ejeZ;
     private Vector3 posicionInicial;
     private Rigidbody rbDado;
+    private bool dadoEnMovimiento = true;
+    public FaceController[] lados = new FaceController[20];
+    private int valorDado;
+    private int ladoOculto;
 
     // Start is called before the first frame update
     void Start()
@@ -25,20 +29,53 @@ public class DiceController : MonoBehaviour
         {
             PrepararDado();
         }
+
+        if (rbDado.IsSleeping() && dadoEnMovimiento)
+        {
+            dadoEnMovimiento = false;
+            ladoOculto = ComprobarLados();
+            valorDado = 21 - ladoOculto;
+            if (valorDado == 21)
+            {
+                rbDado.AddForce(3f, 0, 0, ForceMode.Impulse);
+                dadoEnMovimiento = true;
+            }
+        }
+        if (!dadoEnMovimiento)
+        {
+            UIControl.instancia.ActualizarValor(valorDado);
+        }
     }
 
     void PrepararDado()
     {
         this.transform.position = posicionInicial;
         rbDado.velocity = new Vector3(0f, 0f, 0f);
+        UIControl.instancia.LimpiarValores();
+        dadoEnMovimiento = true;
         ejeX = Random.Range(0f, 271f);
         ejeY = Random.Range(0f, 271f);
         ejeZ = Random.Range(0f, 271f);
         this.transform.Rotate(ejeX, ejeY, ejeZ);
-        ejeX = Random.Range(-3f,3f);
-        ejeY = Random.Range(-2f,0f);
-        ejeZ = Random.Range(-3f,3f);
-        rbDado.AddForce(ejeX,ejeY,ejeZ, ForceMode.Impulse);
+        ejeX = Random.Range(-3f, 3f);
+        ejeY = Random.Range(-2f, 0f);
+        ejeZ = Random.Range(-3f, 3f);
+        rbDado.AddForce(ejeX, ejeY, ejeZ, ForceMode.Impulse);
+        
+    }
+
+    int ComprobarLados()
+    {
+        int valor = 0;
+        for (int i = 0; i < 20; i++)
+        {
+            if (lados[i].CompruebaSuelo())
+            {
+                valor = i + 1;
+            }
+        }
+
+        return valor;
 
     }
 }
