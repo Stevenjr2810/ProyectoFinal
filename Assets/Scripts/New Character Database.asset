@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21fe0a45181a1dd4cb39850091578a51, type: 3}
+  m_Name: New Character Database
+  m_EditorClassIdentifier: 
+  character:
+  - characterName: Picaro
+    characterSprite: {fileID: 1606648015, guid: 8348488175a787e498276aaa58618dfd, type: 3}
+    characterAvatar: {fileID: 1200770225, guid: d37ac39c1a21f0847a593836bb87a057, type: 3}
+  - characterName: Mago
+    characterSprite: {fileID: -1138553226, guid: 3ff1f11e824f24949bd3c78ae442d13e, type: 3}
+    characterAvatar: {fileID: 1432965353, guid: 3399e3b7ab0b5ac49b01f00a27f9ed96, type: 3}
+  - characterName: Guerrero
+    characterSprite: {fileID: 1730547792, guid: 0f8ed5cf6de0ecd4b93dcfc2c5d5226d, type: 3}
+    characterAvatar: {fileID: 305074556, guid: 2b487a25259c4124ab760ae620739f01, type: 3}
