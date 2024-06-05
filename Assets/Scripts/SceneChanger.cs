@@ -8,4 +8,16 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    // Método para salir del juego.
+    public void ExitGame()
+    {
+        // Si estamos en el editor de Unity, usamos el siguiente código para detener la ejecución del juego.
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // Si estamos en una build del juego, cerramos la aplicación.
+        Application.Quit();
+#endif
+    }
 }
