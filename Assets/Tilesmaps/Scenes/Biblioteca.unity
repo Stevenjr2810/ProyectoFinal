@@ -3631,7 +3631,7 @@ PrefabInstance:
       objectReference: {fileID: 1359180749}
     - target: {fileID: 1167804875061536002, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: methodParameters.Array.data[0].objValue.stringValue
-      value: Pelea
+      value: Fight-1
       objectReference: {fileID: 0}
     - target: {fileID: 1343248934907572485, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: targetObject
@@ -3639,7 +3639,11 @@ PrefabInstance:
       objectReference: {fileID: 1359180749}
     - target: {fileID: 1343248934907572485, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: methodParameters.Array.data[0].objValue.stringValue
-      value: Pelea
+      value: Fight-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337904294851276225, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: selectedBlocks.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4337904294851276225, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: selectedCommands.Array.size
