@@ -1,64 +1,60 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using System.Transactions;
-using UnityEngine.SocialPlatforms;
+﻿using UnityEngine;
+using UnityEngine.UI; // Asegúrate de usar el espacio de nombres de UI
 
 public class GameController : MonoBehaviour
 {
-    private List<FighterStats> fighterStats;
+    public Button swordButton;
+    public Button bowButton;
+    public Button magicButton;
 
-    private GameObject battleMenu;
+    public Animator characterAnimator;
+    public Health enemyHealth; // Referencia al componente Health del enemigo
+    public PlayerMana playerMana; // Referencia al componente PlayerMana del jugador
+    public PlayerHealth playerHealth; // Referencia al componente PlayerHealth del jugador
 
-    public Text battleText;
-
-    private void Awake()
-    {
-        battleMenu = GameObject.Find("ActionMenu");
-    }
     void Start()
     {
-        fighterStats = new List<FighterStats>();
-        GameObject hero = GameObject.FindGameObjectWithTag("Hero");
-        FighterStats currentFighterStats = hero.GetComponent<FighterStats>();
-        currentFighterStats.CalculateNextTurn(0);
-        fighterStats.Add(currentFighterStats);
-
-        GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-        FighterStats currentEnemyStats = enemy.GetComponent<FighterStats>();
-        currentEnemyStats.CalculateNextTurn(0);
-        fighterStats.Add(currentEnemyStats);
-
-        fighterStats.Sort();
-        
-
-        NextTurn();
+        // Añadir listeners a los botones para llamar a las funciones respectivas
+        swordButton.onClick.AddListener(() => AttackEnemy("SwordAttack", 10));
+        bowButton.onClick.AddListener(() => AttackEnemy("BowAttack", 8));
+        magicButton.onClick.AddListener(() => MagicAttack());
     }
 
-    public void NextTurn()
+    void AttackEnemy(string animationName, int damage)
     {
-        battleText.gameObject.SetActive(false);
-        FighterStats currentFighterStats = fighterStats[0];
-        fighterStats.Remove(currentFighterStats);
-        if (!currentFighterStats.GetDead())
+        // Reproduce la animación correspondiente
+        characterAnimator.SetTrigger(animationName);
+
+        // Reduce la salud del enemigo
+        if (enemyHealth != null)
         {
-            GameObject currentUnit = currentFighterStats.gameObject;
-            currentFighterStats.CalculateNextTurn(currentFighterStats.nextActTurn);
-            fighterStats.Add(currentFighterStats);
-            fighterStats.Sort();
-            if(currentUnit.tag == "Hero")
+            enemyHealth.TakeDamage(damage);
+        }
+    }
+
+    void MagicAttack()
+    {
+        int magicDamage = 15;
+        int manaCost = 20;
+
+        // Verifica si el jugador tiene suficiente maná
+        if (playerMana.GetMana() >= manaCost)
+        {
+            // Reproduce la animación de ataque mágico
+            characterAnimator.SetTrigger("MagicAttack");
+
+            // Reduce la salud del enemigo
+            if (enemyHealth != null)
             {
-                this.battleMenu.SetActive(true);
-            } else
-            {
-                this.battleMenu.SetActive(false);
-                string attackType = Random.Range(0, 2) == 1 ? "melee" : "range";
-                currentUnit.GetComponent<FighterAction>().SelectAttack(attackType);
+                enemyHealth.TakeDamage(magicDamage);
             }
-        } else
+
+            // Reduce el maná del jugador
+            playerMana.UseMana(manaCost);
+        }
+        else
         {
-            NextTurn();
+            Debug.Log("Not enough mana!");
         }
     }
 }
