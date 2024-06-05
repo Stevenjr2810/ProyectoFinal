@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &354701835792380593
+--- !u!1 &909902395123839567
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,59 +8,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1079168501616241685}
-  - component: {fileID: 3643981878073162287}
-  - component: {fileID: 7163658885452952945}
+  - component: {fileID: 7284063447540400506}
+  - component: {fileID: 6980043737471545042}
+  - component: {fileID: 8386869134992243885}
   m_Layer: 0
-  m_Name: Anciana
+  m_Name: "Ni\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1079168501616241685
+--- !u!4 &7284063447540400506
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354701835792380593}
+  m_GameObject: {fileID: 909902395123839567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.17, y: 4.11, z: 0}
-  m_LocalScale: {x: 2.7, y: 2.7, z: 2.7}
+  m_LocalPosition: {x: -6.78, y: -1.94, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1201811116611377742}
+  - {fileID: 7420831745043074113}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3643981878073162287
+--- !u!114 &6980043737471545042
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354701835792380593}
+  m_GameObject: {fileID: 909902395123839567}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: Anciana
+  nameText: "Ni\xF1o"
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: -2057394478, guid: 8fb06d5ee43d5d249902fbdcd969637c, type: 3}
+  - {fileID: 869915931, guid: a463c9fff0841234683157aabad6aa03, type: 3}
+  - {fileID: 1861564744, guid: d40a40693673d2f4eabf38a8fd084843, type: 3}
+  - {fileID: -1718938545, guid: 75bf29d6a44d6214faeb20676a68eb97, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
---- !u!212 &7163658885452952945
+--- !u!212 &8386869134992243885
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354701835792380593}
+  m_GameObject: {fileID: 909902395123839567}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -95,18 +97,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -737964213, guid: eaa4149e189c08b42b4035be00987c34, type: 3}
+  m_Sprite: {fileID: 19384847, guid: 6d0a4bea2b0e23f4b869250fe0b837ab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.37, y: 0.46}
+  m_Size: {x: 0.33, y: 0.42}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1549069078559827228
+--- !u!1 &6948493496448002084
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -114,18 +116,19 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1201811116611377742}
-  - component: {fileID: 4223630233590381147}
-  - component: {fileID: 3068925504784011914}
-  - component: {fileID: 5390253857408544691}
-  - component: {fileID: 476680814308236599}
-  - component: {fileID: 7662994584303921270}
-  - component: {fileID: 814885579250484710}
-  - component: {fileID: 4775719689779313959}
-  - component: {fileID: 4318580239450517558}
-  - component: {fileID: 2762036379314824155}
-  - component: {fileID: 3714011560316808721}
-  - component: {fileID: 2592969819288121616}
+  - component: {fileID: 7420831745043074113}
+  - component: {fileID: 3842217861224134223}
+  - component: {fileID: 2967742113232770778}
+  - component: {fileID: 5415556087148524084}
+  - component: {fileID: 6234698913904756653}
+  - component: {fileID: 7548486826326696824}
+  - component: {fileID: 308062911305972063}
+  - component: {fileID: 621197332235808038}
+  - component: {fileID: 290706493569260123}
+  - component: {fileID: 8972338179346843746}
+  - component: {fileID: 2489998695148620822}
+  - component: {fileID: 4498192237654303350}
+  - component: {fileID: 2888996769632979945}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -133,28 +136,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1201811116611377742
+--- !u!4 &7420831745043074113
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1079168501616241685}
+  m_Father: {fileID: 7284063447540400506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4223630233590381147
+--- !u!114 &3842217861224134223
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
@@ -173,11 +176,12 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 3068925504784011914}
-  selectedCommands: []
+  - {fileID: 2967742113232770778}
+  selectedCommands:
+  - {fileID: 4498192237654303350}
   variables:
-  - {fileID: 814885579250484710}
-  - {fileID: 4775719689779313959}
+  - {fileID: 308062911305972063}
+  - {fileID: 621197332235808038}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -188,13 +192,13 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
---- !u!114 &3068925504784011914
+--- !u!114 &2967742113232770778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
@@ -202,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 569
+    x: 567.82355
     y: 102
     width: 138.23529
     height: 40
@@ -211,21 +215,22 @@ MonoBehaviour:
   itemId: 0
   blockName: Conversacion 1
   description: 
-  eventHandler: {fileID: 4318580239450517558}
+  eventHandler: {fileID: 290706493569260123}
   commandList:
-  - {fileID: 5390253857408544691}
-  - {fileID: 476680814308236599}
-  - {fileID: 2762036379314824155}
-  - {fileID: 3714011560316808721}
-  - {fileID: 2592969819288121616}
+  - {fileID: 2888996769632979945}
+  - {fileID: 5415556087148524084}
+  - {fileID: 6234698913904756653}
+  - {fileID: 8972338179346843746}
+  - {fileID: 2489998695148620822}
+  - {fileID: 4498192237654303350}
   suppressAllAutoSelections: 0
---- !u!114 &5390253857408544691
+--- !u!114 &5415556087148524084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
@@ -233,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: "Buenos d\xEDas, se\xF1ora. "
+  storyText: "\xA1Hola, Ni\xF1o! \xBFQuieres jugar un rato? "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 1200770225, guid: d37ac39c1a21f0847a593836bb87a057, type: 3}
@@ -246,13 +251,13 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &476680814308236599
+--- !u!114 &6234698913904756653
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
@@ -260,11 +265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: "\xA1Oh, hola querido! \xBFBuscas algunas flores frescas para alegrar
-    tu d\xEDa? "
+  storyText: "\xA1S\xED, claro! L\xE1nzame la pelota. "
   description: 
-  character: {fileID: 3643981878073162287}
-  portrait: {fileID: -2057394478, guid: 8fb06d5ee43d5d249902fbdcd969637c, type: 3}
+  character: {fileID: 6980043737471545042}
+  portrait: {fileID: 1861564744, guid: d40a40693673d2f4eabf38a8fd084843, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -274,13 +278,13 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!61 &7662994584303921270
+--- !u!61 &7548486826326696824
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -306,7 +310,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01250416, y: -0.005035095}
+  m_Offset: {x: -0.013868421, y: 0.0393382}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -317,15 +321,15 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96351564, y: 0.47026312}
+  m_Size: {x: 0.82872134, y: 0.5439396}
   m_EdgeRadius: 0
---- !u!114 &814885579250484710
+--- !u!114 &308062911305972063
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3f274bcd518c0647b0d9ce7c8f3ab84, type: 3}
@@ -333,14 +337,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scope: 1
   key: NPC
-  value: {fileID: 7662994584303921270}
---- !u!114 &4775719689779313959
+  value: {fileID: 7548486826326696824}
+--- !u!114 &621197332235808038
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3f274bcd518c0647b0d9ce7c8f3ab84, type: 3}
@@ -349,39 +353,67 @@ MonoBehaviour:
   scope: 1
   key: Player
   value: {fileID: 0}
---- !u!114 &4318580239450517558
+--- !u!114 &290706493569260123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78c1a9f24ac376a47838385391f83acc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentBlock: {fileID: 3068925504784011914}
+  parentBlock: {fileID: 2967742113232770778}
   suppressBlockAutoSelect: 0
   tagFilter: []
   FireOn: 1
-  colliderVar: {fileID: 4775719689779313959}
---- !u!114 &2762036379314824155
+  colliderVar: {fileID: 621197332235808038}
+--- !u!114 &8972338179346843746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 5
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "(Despu\xE9s de jugar un rato) "
+  clearPrevious:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForInput:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  waitForSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  fadeWhenDone:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+--- !u!114 &2489998695148620822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 3
+  itemId: 6
   indentLevel: 0
-  storyText: "En realidad, estoy buscando informaci\xF3n sobre la familia Wraithmore.
-    \xBFSabe algo al respecto? "
+  storyText: "Oye, \xBFsabes algo sobre la familia Wraithmore? "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 1200770225, guid: d37ac39c1a21f0847a593836bb87a057, type: 3}
@@ -394,25 +426,25 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &3714011560316808721
+--- !u!114 &4498192237654303350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 4
+  itemId: 7
   indentLevel: 0
-  storyText: "Ah, los Wraithmore... Una familia muy misteriosa. Se dice que desaparecieron
-    sin dejar rastro hace d\xE9cadas. "
+  storyText: "\xBFLos Wraithmore? No s\xE9 mucho sobre ellos. Mi mam\xE1 no me deja
+    hablar de esas cosas.\r\n"
   description: 
-  character: {fileID: 3643981878073162287}
-  portrait: {fileID: -2057394478, guid: 8fb06d5ee43d5d249902fbdcd969637c, type: 3}
+  character: {fileID: 6980043737471545042}
+  portrait: {fileID: 869915931, guid: a463c9fff0841234683157aabad6aa03, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -422,25 +454,24 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &2592969819288121616
+--- !u!114 &2888996769632979945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1549069078559827228}
+  m_GameObject: {fileID: 6948493496448002084}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 5
+  itemId: 8
   indentLevel: 0
-  storyText: "Algunos dicen que fue por culpa de la magia oscura que practicaban.
-    Pero yo no creo en esas cosas, \xBFsabes?\r\n"
+  storyText: ...
   description: 
-  character: {fileID: 3643981878073162287}
-  portrait: {fileID: -2057394478, guid: 8fb06d5ee43d5d249902fbdcd969637c, type: 3}
+  character: {fileID: 6980043737471545042}
+  portrait: {fileID: -1718938545, guid: 75bf29d6a44d6214faeb20676a68eb97, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
