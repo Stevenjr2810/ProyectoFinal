@@ -2397,6 +2397,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c6aa8db70fafc7458ca7c4a11e62d68, type: 3}
+--- !u!114 &540198098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3375846280360785323, guid: 8c6aa8db70fafc7458ca7c4a11e62d68, type: 3}
+  m_PrefabInstance: {fileID: 540198097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602687081
 GameObject:
   m_ObjectHideFlags: 0
@@ -3641,6 +3652,22 @@ PrefabInstance:
       propertyPath: methodParameters.Array.data[0].objValue.stringValue
       value: Fight-1
       objectReference: {fileID: 0}
+    - target: {fileID: 3012082192273369661, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: -940906670, guid: 8482e70c318218d479e3b3cf60fddc29, type: 3}
+    - target: {fileID: 3012082192273369661, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2007053102}
+    - target: {fileID: 3467315312662726911, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: -476843634, guid: 5038bab2a85554d40be2e4f0421036a4, type: 3}
+    - target: {fileID: 3467315312662726911, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 540198098}
     - target: {fileID: 4337904294851276225, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: selectedBlocks.Array.size
       value: 0
@@ -3649,6 +3676,14 @@ PrefabInstance:
       propertyPath: selectedCommands.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5684221915712700350, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: -476843634, guid: 5038bab2a85554d40be2e4f0421036a4, type: 3}
+    - target: {fileID: 5684221915712700350, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 540198098}
     - target: {fileID: 6299284168315176122, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: m_Name
       value: Evelyn
@@ -3661,6 +3696,14 @@ PrefabInstance:
       propertyPath: nodeRect.y
       value: 126.91578
       objectReference: {fileID: 0}
+    - target: {fileID: 7105451751520645340, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: 1066429644, guid: 6244248fdafc32147a653523bb448a19, type: 3}
+    - target: {fileID: 7105451751520645340, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2007053102}
     - target: {fileID: 7391360666071416224, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.711953
@@ -3713,6 +3756,14 @@ PrefabInstance:
       propertyPath: methodParameters.Array.data[0].objValue.stringValue
       value: Mansion
       objectReference: {fileID: 0}
+    - target: {fileID: 8200536456640501411, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: portrait
+      value: 
+      objectReference: {fileID: -940906670, guid: 8482e70c318218d479e3b3cf60fddc29, type: 3}
+    - target: {fileID: 8200536456640501411, guid: 0a8d7dd6faaec1741a3a64645ce7f283, type: 3}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 2007053102}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8486,6 +8537,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 207eec1939b4ed54aa1f824a82258247, type: 3}
+--- !u!114 &2007053102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2218139869092700822, guid: 207eec1939b4ed54aa1f824a82258247, type: 3}
+  m_PrefabInstance: {fileID: 2007053101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2022567917
 GameObject:
   m_ObjectHideFlags: 0
