@@ -9,10 +9,10 @@ public class DiceController : MonoBehaviour
     private float ejeZ;
     private Vector3 posicionInicial;
     private Rigidbody rbDado;
-    private bool dadoEnMovimiento = true;
     public FaceController[] lados = new FaceController[20];
-    private int valorDado;
+    public int valorDado; // Hacerlo público para que sea accesible desde DiceManager
     private int ladoOculto;
+    public bool dadoEnMovimiento = true; // Hacerlo público para que sea accesible desde DiceManager
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +22,7 @@ public class DiceController : MonoBehaviour
         PrepararDado();
     }
 
+    // Update is called once per frame
     // Update is called once per frame
     void Update()
     {
@@ -46,8 +47,13 @@ public class DiceController : MonoBehaviour
             UIControl.instancia.ActualizarValor(valorDado);
         }
     }
+    // Método público para ser llamado desde DiceManager
+    public void RollDice()
+    {
+        PrepararDado();
+    }
 
-    void PrepararDado()
+    public void PrepararDado()
     {
         this.transform.position = posicionInicial;
         rbDado.velocity = new Vector3(0f, 0f, 0f);
@@ -61,7 +67,6 @@ public class DiceController : MonoBehaviour
         ejeY = Random.Range(-2f, 0f);
         ejeZ = Random.Range(-3f, 3f);
         rbDado.AddForce(ejeX, ejeY, ejeZ, ForceMode.Impulse);
-        
     }
 
     int ComprobarLados()
@@ -76,6 +81,5 @@ public class DiceController : MonoBehaviour
         }
 
         return valor;
-
     }
 }

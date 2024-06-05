@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Select Player.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Tilesmaps/Scenes/PrimerMapa.unity
+    guid: d9a9fd5182a4025429c97a869864056e
+  - enabled: 1
+    path: Assets/Tilesmaps/Scenes/Biblioteca.unity
+    guid: 15b76eddf9255ef44b87e9748ce8fc54
+  - enabled: 0
+    path: Assets/Tilesmaps/Scenes/Mansion.unity
+    guid: b82070bac96d4264ea0ed1cfaf2de5d8
+  - enabled: 1
+    path: Assets/Tilesmaps/Escenas/Mansion.unity
+    guid: f6ef29326fa251c409e69869f464b0a2
+  - enabled: 1
+    path: Assets/Tilesmaps/Scenes/SegundoPiso-Mansion.unity
+    guid: 1ac017ca3337c6642bbc79bdd08e7ab4
   m_configObjects: {}

@@ -1,11 +1,23 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Asegúrate de tener esta línea
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Método que se llamará al presionar el botón
-    public void StartGame()
+    // MÃ©todo para cambiar de escena. Recibe el nombre de la escena como parÃ¡metro.
+    public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene("Select Player"); // Cambia "GameScene" por el nombre de tu escena
+        SceneManager.LoadScene(sceneName);
+    }
+
+    // MÃ©todo para salir del juego.
+    public void ExitGame()
+    {
+        // Si estamos en el editor de Unity, usamos el siguiente cÃ³digo para detener la ejecuciÃ³n del juego.
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // Si estamos en una build del juego, cerramos la aplicaciÃ³n.
+        Application.Quit();
+#endif
     }
 }
