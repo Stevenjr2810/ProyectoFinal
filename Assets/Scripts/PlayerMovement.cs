@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();       
     }
 
     void Update()
@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        // Actualiza los parámetros del Animator
+        // Actualiza los parï¿½metros del Animator
         animator.SetFloat("MoveX", movement.x);
         animator.SetFloat("MoveY", movement.y);
     }
