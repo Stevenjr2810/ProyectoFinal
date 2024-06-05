@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
     private void LoadVictoryScene()
     {
         // Cargar la nueva escena cuando el enemigo muere
-        SceneManager.LoadScene("VictoryScene"); // Asegúrate de que el nombre coincida con el de tu nueva escena
+        SceneManager.LoadScene("VictoryScee"); // Asegúrate de que el nombre coincida con el de tu nueva escena
     }
 
     private void UpdateHealthText()
