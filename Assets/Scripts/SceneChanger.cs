@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Asegúrate de tener esta línea
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    // Método que se llamará al presionar el botón
-    public void StartGame()
+    // MÃ©todo para cambiar de escena. Recibe el nombre de la escena como parÃ¡metro.
+    public void ChangeScene(string sceneName)
     {
-        SceneManager.LoadScene("Select Player"); // Cambia "GameScene" por el nombre de tu escena
+        SceneManager.LoadScene(sceneName);
     }
 }
